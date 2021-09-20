@@ -52,33 +52,38 @@
     
 }
 /*==================== BASE ====================*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body2-font);
     /* font-size: ;
     background-color:; */
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
+    color: black;
 }
 
-.home{
+.home {
     height: 100vh;
     position: relative;
     z-index: 0;
 }
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     padding-left: 15px;
@@ -86,3 +91,110 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+/**************************NAV**************/
+
+.first {
+    position: relative;
+    height:145vh;
+    font-family:  "Poppins", sans-serif;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left:5.2rem;
+    padding-right: 18px;
+    padding-bottom:9px;
+    padding-top: 27px;
+    margin:1px;
+    color:black;
+}
+
+.navitem {
+    margin-left: 27px;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 15px;
+    position: relative;
+    transition: 0.2s all linear;
+  }
+
+  .navitem:hover {
+    color:#02e079;
+}
+
+  nav {
+    width: 100%;
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+      background-color: transparent; 
+     padding: 8px;
+     /* position: absolute; */
+ }
+
+ .nav_center {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    margin-left: 3px;
+    margin-right: 10px;
+    max-width: 100%;
+    /* position: fixed; */
+}
+
+.logo {
+width: 98px;
+height:20px;
+margin-right: 20px;
+float: left;
+margin-left: 100px;
+cursor: pointer;
+}
+
+.nav_logo {
+  padding-right: 20px;
+  height: 35px;
+  width: 122px;
+}
+
+.nav_sign {
+    margin-top: 27px;
+    height: 50px;
+    width: 145px;
+    border-radius: 3px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 100px;
+    background-color: #02e079;
+    transition: 0.3s all ease-in-out;
+border-style:none ;
+}
+
+.nav_sign:hover {
+    background-color: #000;
+    color: white;
+    width: 145px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+
+.shrink {
+  padding:20px 10px;
+  position: fixed;
+top:0;
+width: 100%;
+transition: all 0.4s;
+padding: 12px;
+background-color: white;
+z-index: 100;
+}
+
+/***********************************************banner*********************************/
