@@ -26,7 +26,7 @@
 /*========== Font and typography ==========*/
 
         --body-font: "Circular Std Book";
-        --body2-font:"Poppins";
+        --body2-font:"Poppins", sans-serif;
         --biggest-font-size: 2.25rem;
         --biggest2-font-size: 2.5rem;
         --h1-font-size: 1.5rem;
@@ -65,8 +65,6 @@ html {
 body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body2-font);
-    /* font-size: ;
-    background-color:; */
 }
 
 ul {
@@ -78,11 +76,6 @@ a {
     color: black;
 }
 
-.home {
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-}
 .container {
     max-width: 1200px;
     width: 100%;
@@ -94,7 +87,7 @@ a {
 /**************************NAV**************/
 
 .first {
-    position: relative;
+    position:relative;
     height:145vh;
     font-family:  "Poppins", sans-serif;
 }
@@ -133,7 +126,8 @@ a {
      align-items: center;
       background-color: transparent; 
      padding: 8px;
-     /* position: absolute; */
+     position: absolute;
+     z-index: 100;
  }
 
  .nav_center {
@@ -173,13 +167,12 @@ cursor: pointer;
     margin-left: 100px;
     background-color: #02e079;
     transition: 0.3s all ease-in-out;
-border-style:none ;
+    border-style:none ;
 }
 
 .nav_sign:hover {
     background-color: #000;
     color: white;
-    width: 145px;
     display: block;
     font-size: 15px;
     font-weight: 600;
@@ -191,10 +184,119 @@ border-style:none ;
   position: fixed;
 top:0;
 width: 100%;
-transition: all 0.4s;
+transition: 0.3s all ease-in-out;
 padding: 12px;
 background-color: white;
 z-index: 100;
 }
 
 /***********************************************banner*********************************/
+
+.banner_section {
+    height: 99vh;
+}
+
+/* .banner_section::after {
+    content: "";
+    background-image: url(b1.png);
+    top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  
+} */
+
+.background_img {
+    position: relative;
+    width:1349px;
+    top:17px;
+    margin-left: 0;
+}
+
+.banner_text {
+    text-align: center;
+    line-height: 1.625;
+    margin-top: 104px;
+    font-family: var(--body2-font);
+    position: absolute;
+    z-index: 0;
+}
+
+.banner_title {
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.09;
+    padding-bottom: 15px;
+    margin-top: -36rem;
+    margin-left: 19rem;
+}
+
+.banner_subtitle {
+    color: #595959;
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 380px;
+    padding-bottom: 25px;
+    margin-left: 31rem;
+}
+
+.banner_image {
+    margin-top: -274px;
+    margin-left: 275px;
+    position: absolute;
+    z-index: 1;
+}
+
+.download {
+   width:40%;
+   margin-left: 308px;
+   margin-top: 142px;
+   position: absolute;
+   z-index: 100;
+   border-bottom: 0.3px rgb(206, 204, 204);
+}
+
+.download_bar span {
+    color:black;
+    line-height: 1.9;
+    font-family: var(--body2-font);
+}
+
+.download_icon {
+    font-family: 'Font Awesome 5 Brands';
+    color: rgb(179, 176, 176);
+    transition: 0.3s all ease-in-out;
+    margin-right: 6px;
+}
+
+.download_icon:hover {
+    color:#02e079;
+}
+
+.download_btn {
+    float: right;
+    height: 47px;
+    width: 148px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #02e079;
+    transition: 0.3s all ease-in-out;
+    border-style:none ;
+    color: white;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 587px;
+}
+
+.download_btn:hover {
+    background-color: #000;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
