@@ -299,11 +299,113 @@ z-index: 100;
     transition: 0.3s all ease-in-out;
 }
 
+/*************pricing section**********/
+.pricing_section {
+   padding-bottom: 60px;
+    padding-top: 58px;
+}
 
+.pricing_text {
+    text-align: center;
+    margin-bottom: 65px;
+}
 
+.pricing_title {
+    color: black;
+    font-size: 46px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
 
+.pricing_subtitle {
+    color: #595959;
+    margin: 0 auto;
+    max-width: 350px;
+    font-size: 14px;
+}
 
+.pricing_boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
 
+.box2 {
+    top: -17px;
+    width:357px;
+    height: 513px;
+    /* padding: 70px 0px 85px; */
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 9px 63px 0px rgb(0 0 0 / 15%);
+}
+
+.box1,
+.box3 {
+    width:357px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 9px 63px 0px rgb(0 0 0 / 3%);
+    height: 486px;
+}
+
+.box_img {
+    margin-left: 133px;
+    margin-top: 18px;
+}
+
+.box_title {
+    text-align: center;
+    color: #010e2a;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.pbox_paragraph {
+    color: #595959;
+    margin-bottom: 16px;
+    line-height: 2.4;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.cost {
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pricing_btn {
+    height: 47px;
+    width: 148px;
+    padding:5px 5px 50px 5px;
+    border-radius: 3px;
+    margin-left: 95px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+    border:2px solid #02e079;
+    color: black;
+    background-color: white;
+}
+
+.pricing_btn:hover {
+    background-color: #02e079;
+    color: white;
+}
+
+/**********btn************/
+.btn {
+    cursor: pointer;
+}
 
 /*==================================START OF FOOTER SECTION==============================*/
 .footer{
