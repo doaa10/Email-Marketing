@@ -334,9 +334,9 @@ z-index: 100;
 }
 
 .box2 {
-    top: -17px;
-    width:357px;
-    height: 513px;
+    top: -18px;
+    width:433px;
+    height: 565px;
     /* padding: 70px 0px 85px; */
     position: relative;
     background-color: #fff;
@@ -350,12 +350,17 @@ z-index: 100;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 9px 63px 0px rgb(0 0 0 / 3%);
-    height: 486px;
+    height: 545px;
 }
 
 .box_img {
-    margin-left: 133px;
-    margin-top: 18px;
+    margin-left: 125px;
+    margin-top: 50px;
+}
+
+.box2_img {
+    margin-left: 158px;
+    margin-top: -3px;
 }
 
 .box_title {
@@ -380,6 +385,12 @@ z-index: 100;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
+}
+
+.badge {
+    width:125px;
+    margin-left: -13px;
+    margin-top: 20px;
 }
 
 .pricing_btn {
