@@ -408,6 +408,26 @@ z-index: 100;
     background-color: white;
 }
 
+.pricing2_btn {
+    height: 47px;
+    width: 148px;
+    padding:5px 5px 50px 5px;
+    border-radius: 3px;
+    margin-left: 119px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+    border:2px solid #02e079;
+    color: black;
+    background-color: white;
+}
+
+.pricing2_btn:hover {
+    background-color: #02e079;
+    color: white;
+}
+
 .pricing_btn:hover {
     background-color: #02e079;
     color: white;
