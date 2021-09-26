@@ -180,6 +180,24 @@ background-color: white;
 z-index: 100;
 }
 
+/*======= responsive area =======*/
+@media(max-width:991px) {
+nav{
+    visibility: hidden;
+}
+}
+
+@media(max-width:767px){
+    nav {
+        visibility: hidden;
+    }
+}
+
+@media(max-width:574px){
+    nav{
+        visibility: hidden;
+    }
+}
 /***********************************************banner*********************************/
 
 .banner_section {
