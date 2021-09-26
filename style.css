@@ -401,6 +401,894 @@ z-index: 100;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================= The start of Testimonial section ========================================= */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testmon {
+  padding: 140px 0;
+  overflow: hidden;
+}
+.testmon .container .tesrmon_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.testmon .container .tesrmon_row .testmon_video {
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  visibility: visible;
+  animation-name: fadeFromRight;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  min-height: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.testmon .container .tesrmon_row .testmon_video .video {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.testmon .container .tesrmon_row .testmon_video .video::before {
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.testmon .container .tesrmon_row .testmon_video .video img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+.testmon .container .tesrmon_row .testmon_video .video .video_play {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  line-height: 85px;
+  transition: 0.3s all ease-in-out;
+  text-align: center;
+  position: absolute;
+}
+.testmon .container .tesrmon_row .testmon_video .video .video_play .video_box {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.testmon .container .tesrmon_row .testmon_video .video .video_play:hover {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  /* transform: translateY(10px); */
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_video
+  .video
+  .video_play
+  .video_box
+  svg {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #01e07b;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  width: 20px;
+  vertical-align: middle;
+  position: relative;
+  margin: 30px;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_video
+  .video
+  .video_play
+  .video_box
+  svg:hover {
+  width: 30px;
+  vertical-align: middle;
+  position: relative;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_video
+  .video
+  .video_play
+  .video_box
+  .fa-play::before {
+  content: "\f04b";
+}
+
+/* =========Start of author =======*/
+.testmon .container .tesrmon_row .testmon_silder {
+  visibility: visible;
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  animation-name: fadeInLeft;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1;
+  padding: 0 70px;
+}
+.testmon .container .tesrmon_row .testmon_silder {
+  padding: 0 85px;
+}
+.testmon .container .tesrmon_row .testmon_silder .silder_box {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.testmon .container .tesrmon_row .testmon_silder .silder_box {
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.testmon .container .tesrmon_row .testmon_silder .silder_box::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.testmon .container .tesrmon_row .testmon_silder .silder_box .testmon_item {
+  width: 426px;
+  margin-right: 0px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  position: absolute;
+  display: none;
+  animation-duration: 1500ms;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item.active {
+  transition-duration: 1.5s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  display: block; 
+  /* display: inline-flex; */
+  /* position:-webkit-sticky; */
+  /* transform: translate3d(424px 0 0); */
+
+  /* transform: translateX(424px);  */
+}
+
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text {
+  text-align: center;
+  position: relative;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text::before {
+  content: '"';
+  top: 0;
+  left: 0;
+  line-height: 1;
+  color: #f0f0f0;
+  font-weight: 700;
+  font-size: 100px;
+  position: absolute;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 1;
+  bottom: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_img::before {
+  top: 6px;
+  left: 167px;
+  z-index: -1;
+  width: 95px;
+  content: "";
+  height: 95px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #01e07b;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_img
+  img {
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  transform-style: preserve-3d;
+  vertical-align: middle;
+  border-style: none;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  margin: 0;
+  font-family: "Poppins";
+  line-height: 1.2;
+  text-align: center;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  p {
+  color: #666666;
+  font-size: 18px;
+  line-height: 1.667;
+  padding-bottom: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  ul {
+  margin: 0;
+  padding: 0;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  ul
+  li {
+  color: #ffcc00;
+  margin: 0px 2px;
+  text-decoration: none;
+  display: inline-block;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  ul
+  li
+  i {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  .silder_author {
+  margin-top: 10px;
+  text-align: center;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  .silder_author
+  h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: "Poppins";
+  line-height: 1.2;
+  text-align: center;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  .silder_author
+  h4
+  a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_item
+  .silder_img_text
+  .silder_text
+  .silder_author
+  span {
+  color: #383838;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_silder_controle
+  .dots {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  padding-right: 3px;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_silder_controle
+  .dots
+  .dot {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 7px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #e5e5e5;
+  transition: 0.3s all ease-in-out;
+}
+.testmon
+  .container
+  .tesrmon_row
+  .testmon_silder
+  .silder_box
+  .testmon_silder_controle
+  .dots
+  .dot.active {
+  background-color: #01e07b;
+  transform: scale(1.3);
+}
+
+
+
+/*==================== Start Responsive Testimonial Section ============================ */
+
+@media only screen and (max-width: 1200px) {
+  .testmon .container .tesrmon_row .testmon_silder .silder_box {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 430px;
+    margin-left: -55px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .testmon .container .tesrmon_row .testmon_video {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 70px;
+  }
+  .testmon .container .tesrmon_row .testmon_silder {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .testmon .container .tesrmon_row .testmon_silder .silder_box {
+    max-width: 430px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .testmon .container .tesrmon_row .testmon_video {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 70px;
+  }
+  .testmon .container .tesrmon_row .testmon_silder {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .testmon .container .tesrmon_row .testmon_silder .silder_box {
+    max-width: 345px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .testmon .container .tesrmon_row .testmon_silder .silder_box .testmon_item {
+    width: 340px;
+  }
+  .testmon
+    .container
+    .tesrmon_row
+    .testmon_silder
+    .silder_box
+    .testmon_item
+    .silder_img_text
+    .silder_img::before {
+    left: 124px;
+  }
+  /* .testmon .container .tesrmon_row .testmon_silder .silder_box :hover {
+    transform: translate3d(-675px, 0px, 0px);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  } */
+}
+/*====================End Responsive Testimonial Section ============================ */
+
+
+
+/* ========================================= The End of Testimonial section ===================================== */
+
+
+
+
+
+
+/* <!--====================== The start of service Section ==================== --> */
+.service {
+  padding: 140px 0;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.service .container .service_section_title {
+  text-align: center;
+}
+.service .container .service_section_title h2 {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 46px;
+  color: #000;
+  font-family: "Poppins";
+  margin: 0;
+}
+.service .container .service_section_title p {
+  max-width: 350px;
+  color: #595959;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.625;
+  font-family: "Roboto";
+}
+.service .container .service_content {
+  padding-top: 50px;
+}
+.service .container .service_content .row_service {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.service .container .service_content .row_service .service_content_box {
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  /* visibility:visible; */
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  animation-name: fadeFromUp;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1;
+  width: 100%;
+}
+/*.service .container .service_content .row_service .service_content_box:hover{
+  /* transform: translateY(100px); */
+/* transform:scaleY(1.2); */
+/* height: 110%; */
+/* opacity: 1; */
+
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text {
+  margin-bottom: 45px;
+  background-color: #fff;
+  padding: 35px 32px 35px;
+  transition: 0.3s all ease-in-out;
+  z-index: 10;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text:hover {
+  margin-bottom: 0;
+  padding: 35px 32px 80px;
+  box-shadow: 0px 6px 27px 0px rgb(31 31 31 / 7%);
+  z-index: 8;
+}
+
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  background-color: #dcf5ea;
+  text-align: center;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_icon
+  svg {
+  height: 50px;
+  fill: #000;
+  overflow: hidden;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text {
+  text-align: center;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  h3 {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 0;
+  cursor: pointer;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  h3
+  a {
+  color: #000;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  p {
+  font-size: 15px;
+  counter-reset: #595959;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  line-height: 1.625;
+  padding-top: 5px;
+  opacity: 0.8;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  .content_text_hover {
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  bottom: 50px;
+  margin: 0 auto;
+  line-height: 40px;
+  /* visibility: hidden; */
+
+  position: absolute;
+  border-radius: 100%;
+  background-color: #01e07b;
+  transition: 0.3s all ease-in-out;
+  font-size: 25px;
+  z-index: 0;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  .content_text_hover:hover {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  line-height: 45px;
+  bottom: 40px;
+}
+.service
+  .container
+  .service_content
+  .row_service
+  .service_content_box
+  .content_icon_text
+  .content_text
+  .content_text_hover
+  a {
+  color: #fff;
+}
+.service .container .service_content .service_btn {
+  height: 40px;
+  width: 155px;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+  line-height: 40px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  background-color: #01e07b;
+  transition: 0.3s all ease-in-out;
+  text-align: center;
+}
+.service .container .service_content .service_btn:hover {
+  background-color: #000;
+  transition-duration: 500ms;
+}
+.service .container .service_content .service_btn a {
+  width: 100%;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+
+
+
+/* ========================== Start Service Responsive ============  */
+@media only screen and (max-width: 1200px) {
+  .service .container .service_content .row_service .service_content_box {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .service .container .service_content .row_service .service_content_box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .service .container .service_content .row_service .service_content_box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ==========================  End Service Responsive   ============  */
+
+
+
+
+/*  =================== The start of The Key frames of the website ============= */
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeFromButton {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  =================== The End of The Key frames of the website ============= */
+
+
+
+
+
+/* <!--===================================== The End of service Section ===================================== --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************pricing section**********/
 .pricing_section {
    padding-bottom: 60px;
